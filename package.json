@@ -1,0 +1,21 @@
+{
+  "name": "vexael",
+  "version": "0.1.0",
+  "description": "A modular agent system for autonomous reasoning, task execution, and collaboration.",
+  "main": "src/agents/coreAgent.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "autonomous",
+    "workflow",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

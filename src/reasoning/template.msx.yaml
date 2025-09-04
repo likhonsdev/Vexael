@@ -1,0 +1,53 @@
+# Vexael Reasoning Template
+# Format: MSX/YAML (Machine-readable Structured Execution/YAML)
+# This template guides the agent's decision-making process.
+
+# The high-level goal of the reasoning chain.
+goal: "Solve a given software engineering task."
+
+# The sequence of steps the agent should follow.
+steps:
+  - step: 1
+    name: "Analyze Task"
+    description: "Understand the user's request, identify constraints, and define the scope."
+    actions:
+      - "Read the task description."
+      - "Identify key requirements and deliverables."
+      - "Ask clarifying questions if the task is ambiguous."
+    output: "A clear understanding of the task requirements."
+
+  - step: 2
+    name: "Formulate a Plan"
+    description: "Create a step-by-step plan to address the task."
+    actions:
+      - "Break down the task into smaller, manageable subtasks."
+      - "Identify the necessary tools and resources for each subtask."
+      - "Estimate the effort and potential challenges."
+    output: "A structured execution plan."
+
+  - step: 3
+    name: "Execute Plan"
+    description: "Carry out the plan, executing each subtask in sequence."
+    actions:
+      - "Write or modify code."
+      - "Run tests to verify changes."
+      - "Interact with APIs or other services."
+    output: "Completed subtasks and code changes."
+
+  - step: 4
+    name: "Verify Solution"
+    description: "Ensure the solution meets all requirements and is of high quality."
+    actions:
+      - "Run all relevant tests (unit, integration, etc.)."
+      - "Perform a self-review of the changes."
+      - "Confirm that the solution addresses the original task."
+    output: "A verified and working solution."
+
+  - step: 5
+    name: "Conclude and Report"
+    description: "Finalize the task and report the outcome."
+    actions:
+      - "Commit the changes with a descriptive message."
+      - "Summarize the work done and the results."
+      - "Notify the user that the task is complete."
+    output: "A final report and completed task."
